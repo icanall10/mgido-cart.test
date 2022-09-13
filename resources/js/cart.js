@@ -59,6 +59,8 @@
                     number_format(total, 0, ', ', ' ')
                 );
 
+                (total > 0) ? $this.addClass('has') : $this.removeClass('has');
+
                 $('[data-cart-input]').val(list.join("\n"));
             });
 
